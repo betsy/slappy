@@ -26,7 +26,10 @@ $( document ).ready(function(){
 		window.setInterval(function(){
 		  var cur = $('img[alt="✋"]').length;
 		  console.log(cur);
-		  if(cur>onScreen) console.log("SLAP");
+		  if(cur>onScreen){
+		  	console.log("THWACK");
+		  	$.post('http://localhost:3000');
+		  }
 		  onScreen = cur;
 		}, 1000);
 	}

@@ -2,7 +2,7 @@
 	"name": "Slappy",
 	"version": "1.0",
 	"description": "Thwack Thwack",
-	"permissions": ["activeTab", "declarativeContent", "storage"],
+	"permissions": ["activeTab", "declarativeContent", "storage", "http://localhost/*"],
 	"content_scripts": [{
 		// "matches": ["*://*.stackoverflow.com/*"],
 		"matches": ["<all_urls>"],
